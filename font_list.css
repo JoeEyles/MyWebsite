@@ -1,0 +1,26 @@
+﻿
+
+/* https://www.fontsquirrel.com/tools/webfont-generator */
+/* https://stackoverflow.com/questions/11737168/how-to-embed-fonts-in-css */
+
+
+@font-face {
+    font-family: 'blackjack';
+    src: url('fonts/blackjack-webfont.eot'), url('fonts/blackjack-webfont.ttf') format('truetype'), url('fonts/blackjack-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('fonts/roboto-regular-webfont.eot'), url('fonts/roboto-regular-webfont.ttf') format('truetype'), url('fonts/roboto-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'organic_fruit';
+    src: url('fonts/organic_fruit-webfont.eot'), url('fonts/organic_fruit-webfont.ttf') format('truetype'), url('fonts/organic_fruit-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

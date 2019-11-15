@@ -1,0 +1,175 @@
+﻿
+
+
+body
+{
+	font-family: roboto-regular, Verdana, Geneva, sans-serif;
+}
+
+
+.entire_app_holder {
+	width:100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.apps_holder_div {
+	width:45%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.apps_holder_div iframe {
+	max-width: 100%;
+	width: 560px;
+	height: 315px;
+}
+
+.apps_image {
+	margin: 2px;
+	max-width:100%;
+	max-height:100%;
+	vertical-align: middle;
+}
+
+.apps_image_half {
+	max-width:45%;
+	vertical-align: middle;
+	margin: 2px;
+}
+
+
+.lr_margin {
+	margin-left:30px;
+	margin-right:30px;
+}
+
+
+.spacing_top_2_5 {
+	margin-top: 2.5%;
+}
+
+.spacing_top_5 {
+	margin-top: 5%;
+}
+
+#header {
+	text-align: center;
+	width: 100%;
+}
+
+input {
+	background-color:rgba(0, 0, 0, 0);
+
+	width: 130px;
+
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	
+	padding: 10px 20px 10px 20px;
+	border-radius: 30px 30px 0px 0px;
+	border-style: solid;
+	border-color: black black white black;
+	border-width: 2px 2px 0px 2px;
+}
+
+input:hover {
+    text-shadow: 0px 0px 5px #000000;
+}
+
+.this_page_button {
+	background-color:rgba(0, 0, 0, 0.1);
+
+}
+
+.not_this_page_button {
+}
+
+
+#buttons_div {
+	display: flex;
+	justify-content: space-between;
+	border-color: white white black white;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+}
+
+.top_border_line {
+	border-color: black white white white;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+}
+
+content {
+    text-align: center;
+}
+
+p {
+	margin-left:15%;
+    width:70%; 
+    word-wrap:break-all;
+    text-align:left;
+}
+
+h3 {
+	text-align:center;
+}
+h4 {
+	text-align:center;
+}
+
+
+.even_spaced_2_images_holder {
+
+	text-align:center;
+}
+
+.even_spaced_2_images {
+	width:30%;
+	height:auto;
+}
+
+.gif_holder {
+	width:100%;
+	text-align:center;
+}
+
+.single_phd_gif_wrapper {
+	width:31%;
+	height:100%;
+	display: inline-block;
+}
+
+.phd_gif {
+width:100%;
+height: auto;
+vertical-align: middle;
+}
+
+.same_height_image {
+	height: 320px;
+	width: auto;
+}
+
+.centered_equation_holder{
+	width: 100%;
+  text-align: center;
+}
+
+.centered_equation {
+}
+.centered_image {
+	width: 200px;
+}
+
+
+#footer p {
+	text-align: center !important;
+}

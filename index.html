@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>Joe Eyles</title>
+    <link rel="icon" href="images/favicon.png" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="font_list.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <h1 class="spacing_top_2_5">
+        Joe Eyles
+      </h1>
+      <h2 class="spacing_top_2_5">
+        Mathematician, Programmer
+      </h2>
+
+      <div id="buttons_div" class="spacing_top_5">
+        <div></div>
+        <input type="button" class="this_page_button" onclick="location.href='index.html';" value="PhD/Research" />
+        <input type="button" class="not_this_page_button" onclick="location.href='programming.html';" value="Programming" />
+        <input type="button" class="not_this_page_button" onclick="location.href='CV.html';" value="CV" />
+        <input type="button" class="not_this_page_button" onclick="location.href='other.html';" value="Other" />
+        <div></div>
+      </div>
+    </div>
+
+
+    <div id="content">
+
+
+      <h3 class="spacing_top_5">
+        Mathematics PhD
+      </h3>
+
+      <div class="gif_holder spacing_top_2_5">
+        <div class="single_phd_gif_wrapper">
+          <img class="phd_gif" src="images/gif1.gif" />
+        </div>
+        <div class="single_phd_gif_wrapper">
+          <img class="phd_gif" src="images/gif2.gif" />
+        </div>
+        <div class="single_phd_gif_wrapper">
+          <img class="phd_gif" src="images/gif3.gif" />
+        </div>
+      </div>
+      
+      <p class="spacing_top_2_5">
+        For my PhD I modelled tumour growth. To do this I first numerically solved a system of partial differential equations, and then performed a significant amount of Mathematics analysis on the system of equations as well as the numerical solutions. This was a Mathematics PhD, but involved approximately 50% programming.
+        I was engaged in independent (supervised) research, including Mathematical analysis,
+        scientific programming, and producing literature (a <a href="docs/Eyles_King_Styles_paper.pdf" target="_blank">paper</a> (arxiv link <a href="https://arxiv.org/abs/1907.06590" target="_blank">here</a>) and a <a href="docs/Thesis_Joe_Eyles_2019.pdf" target="_blank">thesis</a> (link to the publication <a href="http://sro.sussex.ac.uk/id/eprint/84803/" target="_blank">here</a>)). I was also involved in teaching undergraduate students, and marking work.
+        The system of equations I numerically solved and analysed is shown below, along with a diagram detailing the notation for the interior and exterior of the tumour.
+      </p>
+
+      <div class="centered_equation_holder spacing_top_2_5">
+        <img class="centered_equation lr_margin" src="http://latex.codecogs.com/gif.latex?\begin{align*}&space;\Delta&space;u&space;=&space;1&space;\quad&space;\mbox{&space;on&space;}&space;\Omega(t)\\&space;\nabla&space;u&space;\cdot&space;\mathbf{n}&space;&plus;&space;\frac{u}{\alpha}&space;=&space;Q&space;\quad&space;\mbox{&space;on&space;}&space;\Gamma(t)&space;\\&space;V&space;=&space;\beta&space;\kappa&space;&plus;&space;\frac{u}{\alpha}&space;\quad&space;\mbox{&space;on&space;}&space;\Gamma(t)\\&space;\end{align*}" title="" />
+        <img class="centered_image lr_margin" src="images/tumour.png" title="" />
+      </div>
+
+      <p class="spacing_top_2_5">
+        Since I wanted to use a sharp interface approach and finite element methods, I had to maintain an evolving mesh on this moving boundary. This is a highly complex problem, that has no standard solution. In order to generate a solution, I had to implement a number of algorithms from the literature.
+        I settled on a combination of approaches. The first approach smooths the velocity of the boundary over the interior of the tumour, allowing the mesh to evolve with it. The second re-builds the mesh when it reaches a point at which it can no longer be smoothed. You can see this below.
+      </p>
+
+      <div class="even_spaced_2_images_holder spacing_top_2_5">
+        <img class="even_spaced_2_images" src="images/mesh1.gif" />
+        <img class="even_spaced_2_images" src="images/mesh2.gif" />
+      </div>
+
+    </div>
+
+
+
+    <div class="top_border_line spacing_top_5">
+      <h3 class="spacing_top_5">
+        Eye tracking
+      </h3>
+
+      <p class="spacing_top_2_5">
+        In the past I have worked with a robotics research group at the University of Portsmouth. I was researching eye tracking methods (finding the eyes in an image of a face, or a webcam feed). I then used this to aproximate the gaze location on a computer screen. I programmed in both C++ and Matlab to create my own method, which was as effective as many of the existing methods.
+        We published a paper to an IEEE journal. Go to <a href="http://ieeexplore.ieee.org/abstract/document/6722242/" target="_blank">here</a> for the paper. For more information see the informal <a href="http://joescomputingfun.wordpress.com/" target="_blank">blog</a> that I wrote during the work.
+      </p>
+
+      <div class="gif_holder spacing_top_2_5">
+        <img class="" src="images/eye_tracking.jpg" />
+        <iframe width="391" height="220" src="https://www.youtube.com/embed/Izf17ytLQuI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+    </div>
+
+    
+    
+    
+    <div id="footer" class="top_border_line spacing_top_5">
+      <p>
+        Email me at
+        <a href="mailto:joe@eyles.co.uk">joe@eyles.co.uk</a>,
+        or add me on <a href="https://www.linkedin.com/in/joe-eyles-88073540/" target="_blank">LinkedIn</a>.
+      </p>
+    </div>
+  </body>
+
+</html>
